@@ -130,20 +130,6 @@ class DoubleLinkedList:
 
         return "No such data."
 
-    def show(self):
-
-        current = self.head
-        while current:
-            print(current.data, end=" ")
-            current = current.next
-
-        print()
-        # from end to start
-        current = self.last
-        while current:
-            print(current.data, end=" ")
-            current = current.prev
-
     def get_next_node(self, n):
         current_node = self.head
 
